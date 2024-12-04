@@ -4,7 +4,6 @@ with open('input.txt', 'r') as file:
     result = 0
     input = file.read()
     instructions = re.findall("mul\\([0-9]+,[0-9]+\\)|do\\(\\)|don't\\(\\)", input)
-    print(instructions)
     ignore = False
     for instruction in instructions:
         if instruction == "don't()":
